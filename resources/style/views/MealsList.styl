@@ -1,0 +1,75 @@
+.meals-list
+    position relative
+    overflow visible
+    .header
+        text-align left
+        border-style solid
+        border-color COLOR
+        border-width 1px 0px 1px 0px
+
+    & > table
+        tr
+            height 42px
+
+        th
+        td
+            padding 5px
+            min-width 140px
+            @extend .u-ellipsis
+
+        th.attribute-date
+        td.attribute-date
+            min-width 240px
+            overflow visible
+
+    .actions
+        min-width 80px
+        width 80px
+        padding-left 5px
+
+    .action
+        margin-left 5px
+        cursor pointer
+        display none
+        size 25px
+
+    .delete-action
+        background url('../images/delete.png')
+        &:hover
+            background url('../images/delete-hover.png')
+
+    .edit-action
+        background url('../images/edit.png')
+        &:hover
+            background url('../images/edit-hover.png')
+
+    .undo-action
+        background url('../images/undo.png')
+        &:hover
+            background url('../images/undo-hover.png')
+
+    .meal-row
+        input
+        select
+            padding INPUT_PADDING
+        input
+            width 100%
+
+        &:hover
+            .action
+                display inline-block
+            .undo-action
+                display none
+
+    .actions.editing
+        .delete-action
+            display none
+        .edit-action
+            background url('../images/done.png')
+            &:hover
+                background url('../images/done-hover.png')
+
+        .edit-action
+        .undo-action
+            display inline-block
+

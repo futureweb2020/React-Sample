@@ -1,0 +1,48 @@
+@import '~normalize.css/normalize.css'
+@import '~react-simpletabs/lib/react-simpletabs.styl'
+@import '~css-utils/index.styl'
+
+@import './utils.styl'
+@import './defaults.styl'
+
+APP_WIDTH = 900px
+PADDING = 16px
+
+// ---------------- input display
+
+INPUT_PADDING = 4px 2px 4px 2px
+
+// ---------------- colors
+ERROR_COLOR        = #7E2A2A
+COLOR              = #4d4d4d
+HOVER_COLOR        = #d827ef
+DAY_NORMAL_COLOR   = #18662B
+DAY_EXCEEDED_COLOR = #A83838
+
+#content
+    position relative
+    height 100%
+
+body
+    color COLOR
+    background #eaeaea url('../images/bg.png')
+    line-height 1.4em
+
+.app
+    center()
+    max-width 100%
+    height 100%
+    width APP_WIDTH
+    @extend .u-flex-column
+
+@import './Header.styl'
+@import './Config.styl'
+
+.app .body
+    min-width APP_WIDTH
+    flex 1
+    @extend .u-flex-column
+
+@import './login'
+@import './views'
+@import './pages'

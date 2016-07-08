@@ -1,0 +1,69 @@
+@keyframes loader-fade
+    from
+        opacity 1
+    to
+        opacity 0.25
+
+loadmask-background = #A8A8A8
+loadmask-opacity = 0.3
+
+center()
+    position absolute
+    margin auto
+    top 0px
+    left 0px
+    right 0px
+    bottom 0px
+
+.body >
+    .login
+    .logout
+        center()
+    .logout
+        width 400px
+        height 200px
+    .login
+        width 400px
+        height 280px
+        border 1px solid gray
+        box-shadow 1px 1px 5px 0px rgba(50, 50, 50, 0.75)
+        @extend .u-flex-column
+
+        .login-wrap
+            padding 20px
+            flex 1
+        .register
+            width 100%
+            text-align right
+            padding 5px
+            padding-right 20px
+            border 1px solid rgb(165, 164, 164)
+            border-left-width 0px
+            border-right-width 0px
+
+        table
+            width 100%
+            table-layout fixed
+
+        .item
+            input
+                width 250px
+            input
+            button
+                margin 10px
+                border 1px solid gray
+                padding 4px
+
+            button
+                padding-right 10px
+                padding-left 10px
+                margin-right 0px
+
+            &.error
+                color ERROR_COLOR
+                font-weight bold
+            &.title
+                font-weight bold
+                font-size 1.2em
+                td
+                    padding-bottom 15px

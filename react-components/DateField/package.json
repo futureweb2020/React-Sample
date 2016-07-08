@@ -1,0 +1,17 @@
+{
+  "name": "DateField",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "react-date-picker": "~0.1.0",
+    "region-align": "~0.2.0",
+    "copy-utils": "~1.0.0",
+    "moment": "~2.8.3"
+  }
+}

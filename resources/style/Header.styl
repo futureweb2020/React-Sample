@@ -1,0 +1,41 @@
+.app > .header
+    text-shadow -1px -1px rgba(0, 0, 0, 0.2)
+    color rgba(255, 255, 255, 0.3)
+    padding-top PADDING
+    padding-bottom PADDING
+
+    h1
+        font-size 2.5em
+        width 100%
+
+    .config
+    .toggle-sort
+    .logout
+        @extend .u-unselectable
+        margin-left 20px
+        display inline-block
+        float right
+        right 0px
+        vertical-align middle
+        size 32px
+        cursor pointer
+
+    .config
+        background url('../images/config.png')
+        &:hover
+            background url('../images/config-hover.png')
+
+    .toggle-sort
+        background url('../images/sort-asc.png')
+        &:hover
+            background url('../images/sort-asc-hover.png')
+
+    .toggle-sort.sort-desc
+        background url('../images/sort-desc.png')
+        &:hover
+            background url('../images/sort-desc-hover.png')
+
+    .logout
+        background url('../images/logout.png')
+        &:hover
+            background url('../images/logout-hover.png')

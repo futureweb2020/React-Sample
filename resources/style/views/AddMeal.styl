@@ -1,0 +1,36 @@
+.add-meal
+    padding 20px
+    position relative
+
+    .item:first-child
+        margin-top 10px
+
+    .item
+        padding-bottom 4px
+        @extend .u-flex-row
+
+        input
+        select
+        & > span
+            padding INPUT_PADDING
+        & > input
+        & > .date-time-field
+            flex 1
+
+    .item > span
+        width 100px
+        display inline-block
+
+    .item.error
+        span
+            width 100%
+            color ERROR_COLOR
+
+    legend
+        font-weight bold
+
+    button
+        float right
+        margin-top 10px
+        padding 2px 30px 2px 30px
+        background gradient(linear, left top, left bottom, from(#fff), to(#ededed))

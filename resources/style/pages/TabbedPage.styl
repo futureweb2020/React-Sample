@@ -1,0 +1,36 @@
+.tabbed
+    position relative
+    flex 1
+
+.tabs
+    @extend .u-flex-column
+    size 100%
+    position absolute
+
+.tabs-panels
+    flex 1
+    position relative
+    overflow visible
+
+    & > .tabs-panel:first-child
+        overflow visible //the add meal tab
+
+.tabs-panel
+    position absolute
+    size 100%
+    overflow auto
+
+.tabs-navigation
+    color = darken(HOVER_COLOR, 50%)
+    padding 0px
+
+    .tabs-menu-item
+
+        a
+            text-decoration none
+            padding 0 30px
+        &:not(.is-active) a:hover
+            color color
+        &.is-active a
+            background #E1E1E1
+            border-top-color color

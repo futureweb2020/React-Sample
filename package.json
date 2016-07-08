@@ -1,0 +1,52 @@
+{
+  "name": "calorie-warn",
+  "private": true,
+  "version": "0.1.0",
+  "description": "calorie app",
+  "main": "index.js",
+  "scripts": {
+    "test": "make",
+    "serve": "./node_modules/.bin/http-server",
+    "start": "npm run serve | npm run dev",
+    "build": "./node_modules/.bin/webpack --progress --colors --optimize-minimize --optimize-occurence-order --optimize-dedupe --config build.config.js",
+    "bundle": "./node_modules/.bin/webpack --progress --colors --config build.config.js",
+    "dev": "./node_modules/.bin/webpack-dev-server --progress --colors --port 8090 --content-base http://localhost:8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "classy": "~1.4.10",
+    "copy-utils": "~1.0.0",
+    "css-utils": "^0.4.1",
+    "firebase": "~1.1.2",
+    "functionally": "~0.6.2",
+    "hasown": "~1.0.1",
+    "moment": "~2.8.3",
+    "normalize.css": "~3.0.2",
+    "react": "~0.11.2",
+    "react-date-picker": "^0.1.4",
+    "react-router": "~0.9.4",
+    "react-simpletabs": "~0.2.0",
+    "superagent": "~0.20.0",
+    "ustring": "~1.4.1",
+    "uuid": "~2.0.1",
+    "zemitter": "~0.2.4"
+  },
+  "devDependencies": {
+    "style-loader": "~0.8.1",
+    "jsx-loader": "~0.11.2",
+    "stylus-loader": "~0.4.0",
+    "css-loader": "~0.9.0",
+    "webpack": "~1.4.7",
+    "file-loader": "~0.8.0",
+    "url-loader": "~0.5.5",
+    "webpack-dev-server": "~1.6.5",
+    "should": "~4.0.4",
+    "mocha": "~1.21.5",
+    "http-server": "~0.7.2"
+  }
+}

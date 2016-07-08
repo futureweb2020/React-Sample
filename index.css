@@ -1,0 +1,17 @@
+
+@-webkit-keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+   @-moz-keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+     @-o-keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+        @keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+
+
+#test .eye {
+    width: 10px;
+    height: 10px;
+    background: red;
+    opacity: 0;
+    -webkit-animation: loaderfade 1s linear 0s infinite alternate;
+        -moz-animation: loaderfade 1s linear 0s infinite alternate;
+          -o-animation: loaderfade 1s linear 0s infinite alternate;
+             animation: loaderfade 1s linear 0s infinite alternate;
+}
